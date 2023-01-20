@@ -135,7 +135,7 @@ namespace Drum
                     }
                     if(neededWord == completedWord)
                     {
-                        MessageBox.Show($"{completedWord} is correct");
+                        MessageBox.Show($"{completedWord} верно");
                         Word = new List<char>();
                         secondList = firstList;
                         GetRandomQuestion();
@@ -146,7 +146,7 @@ namespace Drum
                     }
                     else
                     {
-                        MessageBox.Show($"{completedWord} is wrong");
+                        MessageBox.Show($"{completedWord} неверно");
                         Word = new List<char>();
                         Shuffle();
                         Update();
