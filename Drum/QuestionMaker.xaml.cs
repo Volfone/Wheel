@@ -41,5 +41,12 @@ namespace Drum
                 MessageBox.Show("Ошибка");
             }
         }
+
+        private void CancelBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
+        }
     }
 }

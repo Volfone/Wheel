@@ -35,6 +35,13 @@ namespace Drum
             InitializeComponent();
             GetRandomQuestion();
             CreateLettersCollection();
+            if(neededWord == "")
+            {
+                ButtonPanel.Visibility = Visibility.Hidden;
+                ButtonPanel_2.Visibility = Visibility.Hidden;
+                ButtonPanel_3.Visibility = Visibility.Hidden;
+                ButtonPanel_4.Visibility = Visibility.Hidden;
+            }
         }
         public void Update()
         {
